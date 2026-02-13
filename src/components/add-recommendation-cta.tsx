@@ -31,7 +31,7 @@ export function AddRecommendationCTA() {
         </SignedOut>
 
         <SignedIn>
-          <div className="text-center">
+          <div className="text-center fixed right-10 bottom-10 mx-auto">
             <button
               onClick={() => setIsModalOpen(true)}
               className="bg-linear-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
