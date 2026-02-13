@@ -2,13 +2,12 @@
 
 import { useState } from 'react'
 import { Genre } from '@/types/movie'
+import { GENRES } from '@/constants/genre'
 
 interface AddRecommendationModalProps {
   isOpen: boolean
   onClose: () => void
 }
-
-const GENRES: Genre[] = ['Horror', 'Action', 'Comedy', 'Drama', 'Sci-Fi', 'Thriller']
 
 export function AddRecommendationModal({ isOpen, onClose }: AddRecommendationModalProps) {
   const [formData, setFormData] = useState({
@@ -116,8 +115,8 @@ export function AddRecommendationModal({ isOpen, onClose }: AddRecommendationMod
                 <option value="">Select a genre</option>
 
                 {GENRES.map((genre) => (
-                  <option key={genre} value={genre}>
-                    {genre}
+                  <option key={genre.value} value={genre.value}>
+                    {genre.label}
                   </option>
                 ))}
               </select>
