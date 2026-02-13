@@ -2,8 +2,6 @@
 
 A modern, full-stack recommendation sharing platform with role-based access control. Built with Next.js, Convex, and Clerk.
 
-![HypeShelf Preview](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=HypeShelf)
-
 ## ✨ Features
 
 ### 🔐 Role-Based Access Control (RBAC)
